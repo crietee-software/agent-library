@@ -1,33 +1,25 @@
-# Skills
+# Agent library
 
-Persoonlijke skills die Grok in elke sessie kan laden. Elke skill is een map met een `SKILL.md`.
+Persoonlijke skills en subagent-bestanden. Grok leest deze map op deze machine.
 
-Grok leest deze map via `~/.grok/config.toml`:
+| Map | Wat je erin zet | Hoe Grok het laadt |
+| --- | --- | --- |
+| `skills/` | Een map per skill, met `SKILL.md` | `~/.grok/config.toml` → `[skills] paths` |
+| `agents/` | Eén `.md` per subagent | `~/.grok/agents` wijst hierheen |
+| `personas/` | Eén `.toml` per persona | `~/.grok/personas` wijst hierheen |
 
-```toml
-[skills]
-paths = ["~/Documents/GitHub/skills"]
+Skills die al in `~/.claude/skills` of `~/.agents/skills` staan blijven daar en blijven werken.
+
+## Skill
+
+```text
+skills/mijn-skill/SKILL.md
 ```
-
-Skills die al via Claude of de agents-map geïnstalleerd zijn (`~/.claude/skills`, `~/.agents/skills`) blijven daar staan en blijven werken. Zet hier de skills die je zelf beheert.
-
-## Nieuwe skill
-
-Maak een map met de skillnaam. Alleen kleine letters, cijfers en koppeltekens. Begin en eindig met een letter of cijfer.
-
-```
-mijn-skill/
-  SKILL.md
-  references/   # optioneel, langere uitleg
-  scripts/      # optioneel, helpers
-```
-
-`SKILL.md`:
 
 ```markdown
 ---
 name: mijn-skill
-description: Wat de skill doet, in een of twee zinnen. Use when de gebruiker X vraagt, of /mijn-skill gebruikt.
+description: Wat de skill doet. Use when de gebruiker X vraagt, of /mijn-skill gebruikt.
 ---
 
 # Mijn skill
@@ -35,14 +27,45 @@ description: Wat de skill doet, in een of twee zinnen. Use when de gebruiker X v
 Korte procedure die de agent uitvoert.
 ```
 
-Het `description`-veld bepaalt wanneer Grok de skill zelf start. Noem daarin de situatie en de slash-command.
+Aanroepen als `/mijn-skill`.
 
-Daarna is de skill beschikbaar als `/mijn-skill`. Grok herlaadt skills zodra de bestanden op schijf veranderen.
+## Subagent
+
+```text
+agents/researcher.md
+```
+
+```markdown
+---
+name: researcher
+description: Wanneer de hoofdagent deze subagent moet starten.
+prompt_mode: full
+---
+
+Instructies voor de subagent. Dit is zijn hele opdrachtkader.
+```
+
+De bestandsnaam zonder `.md` is het type. Een nieuwe Grok-sessie kan hem starten als subagent `researcher`.
+
+## Persona
+
+Een persona is een gedragslaag bovenop een subagent. Het type, het model en de tools veranderen niet.
+
+```text
+personas/concise.toml
+```
+
+```toml
+description = "Korte antwoorden, zonder omhaal."
+instructions = """
+Wees kort. Geen inleiding, geen herhaling van de vraag.
+"""
+```
+
+De bestandsnaam zonder `.toml` is de personanaam.
 
 ## Controleren
 
 ```bash
 grok inspect
 ```
-
-Skills uit deze map krijgen als bron `config`.
