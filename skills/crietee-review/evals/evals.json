@@ -1,0 +1,33 @@
+{
+  "skill": "crietee-review",
+  "test_cases": [
+    {
+      "name": "secret_in_diff",
+      "input": "Review this diff: an API key is in the new client.",
+      "assertions": [
+        "Blocker on the secret, value not repeated",
+        "Call is do not ship",
+        "File and line cited",
+        "Review is English"
+      ]
+    },
+    {
+      "name": "happy_path_only",
+      "input": "Look at this PR: the export works, the empty-list error path is missing.",
+      "assertions": [
+        "Must on the missing error path",
+        "Call is ship after must",
+        "No style comments outside the diff"
+      ]
+    },
+    {
+      "name": "clean_small_diff",
+      "input": "Review this small rename, tests green, no behavior change.",
+      "assertions": [
+        "No invented blocker",
+        "Three may-points max",
+        "Call is ship"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "skill": "crietee-quote",
+  "test_cases": [
+    {"input": "Write a quote for this job", "should_trigger": true},
+    {"input": "Can you send a price to Elusive?", "should_trigger": true},
+    {"input": "Put this proposal in the brand style", "should_trigger": true},
+    {"input": "Send the March invoice", "should_trigger": false},
+    {"input": "Update the general terms", "should_trigger": false}
+  ]
+}

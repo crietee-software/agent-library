@@ -1,0 +1,10 @@
+{
+  "skill": "crietee-invoice",
+  "test_cases": [
+    {"input": "Make an invoice for last week's hours", "should_trigger": true},
+    {"input": "Credit note on the last invoice", "should_trigger": true},
+    {"input": "Turn this timesheet into an invoice", "should_trigger": true},
+    {"input": "Write a quote for the shop", "should_trigger": false},
+    {"input": "Restyle the collaboration agreement", "should_trigger": false}
+  ]
+}

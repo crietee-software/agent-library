@@ -1,0 +1,10 @@
+{
+  "skill": "crietee-dev",
+  "test_cases": [
+    {"input": "Cut this into slices and give an hour estimate", "should_trigger": true},
+    {"input": "Write an implementation plan for the integration", "should_trigger": true},
+    {"input": "Handover note for what we just built", "should_trigger": true},
+    {"input": "Review the diff on the PR", "should_trigger": false},
+    {"input": "Write a quote for this build", "should_trigger": false}
+  ]
+}

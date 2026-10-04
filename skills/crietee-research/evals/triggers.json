@@ -1,0 +1,10 @@
+{
+  "skill": "crietee-research",
+  "test_cases": [
+    {"input": "Set up a research plan for this market", "should_trigger": true},
+    {"input": "Run a discovery and deliver a decision memo", "should_trigger": true},
+    {"input": "Write the spike report from the export trial", "should_trigger": true},
+    {"input": "Review this pull request", "should_trigger": false},
+    {"input": "Make the September invoice", "should_trigger": false}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "skill": "crietee-dev",
+  "test_cases": [
+    {
+      "name": "slice_plan",
+      "input": "Write a build plan for a client portal on the existing Next repo, about 30 hours.",
+      "assertions": [
+        "Reads the repo before a stack choice",
+        "Slices of max 8 hours with a visible result",
+        "Hours, not story points",
+        "Plan under artifacts/build via crietee-brand",
+        "Plan is English"
+      ]
+    },
+    {
+      "name": "plan_not_code",
+      "input": "Only an implementation plan, do not build yet.",
+      "assertions": [
+        "Does not write production code",
+        "Names what the first slice makes visible"
+      ]
+    },
+    {
+      "name": "handover",
+      "input": "Write the handover note for the export slice, estimate was 6 hours, it took 7.",
+      "assertions": [
+        "What shipped, how to run it, what was not done",
+        "Hours against the estimate",
+        "No secrets in the note"
+      ]
+    }
+  ]
+}

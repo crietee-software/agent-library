@@ -1,0 +1,10 @@
+{
+  "skill": "crietee-review",
+  "test_cases": [
+    {"input": "Review this pull request", "should_trigger": true},
+    {"input": "Check the diff before I merge", "should_trigger": true},
+    {"input": "Code review on the export change", "should_trigger": true},
+    {"input": "Write a build plan in slices", "should_trigger": false},
+    {"input": "Put the homepage in the brand style", "should_trigger": false}
+  ]
+}

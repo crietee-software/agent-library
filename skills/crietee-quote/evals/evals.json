@@ -1,0 +1,34 @@
+{
+  "skill": "crietee-quote",
+  "test_cases": [
+    {
+      "name": "elusive_hourly",
+      "input": "Write a quote for Elusive Innovations for a small landing page, 12 hours.",
+      "assertions": [
+        "Uses € 40 excl. VAT",
+        "Number QTE-YYYY-NNN from the register",
+        "Contains scope, out of scope, assumptions, and an acceptance line",
+        "File under artifacts/quotes via crietee-brand",
+        "Quote body is English"
+      ]
+    },
+    {
+      "name": "unknown_rate",
+      "input": "Quote for Bakkerij Noord, shop integration.",
+      "assertions": [
+        "Does not invent an hour rate",
+        "Asks for the rate or marks it as an assumption that blocks the price",
+        "No team language"
+      ]
+    },
+    {
+      "name": "vague_scope_band",
+      "input": "Send a proposal for an app, scope still vague, around 40 hours.",
+      "assertions": [
+        "Gives an hour band instead of a bare fixed price",
+        "Names what is out of scope",
+        "Validity is 14 days unless the user says otherwise"
+      ]
+    }
+  ]
+}

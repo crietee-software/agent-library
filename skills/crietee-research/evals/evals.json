@@ -1,0 +1,34 @@
+{
+  "skill": "crietee-research",
+  "test_cases": [
+    {
+      "name": "discovery_memo",
+      "input": "Set up a discovery for a client portal: what do we need to know first?",
+      "assertions": [
+        "One decision question",
+        "Scope and non-goals before sources",
+        "Recommendation do / don't / first X",
+        "Memo under artifacts/research via crietee-brand",
+        "Memo is English"
+      ]
+    },
+    {
+      "name": "competitor_desk",
+      "input": "Research three competitors of this booking tool and write a memo.",
+      "assertions": [
+        "Every claim has a source and confidence",
+        "Fact is separate from interpretation",
+        "No quote price in the memo"
+      ]
+    },
+    {
+      "name": "spike_timebox",
+      "input": "Spike: can we do the export in the current repo without a new service?",
+      "assertions": [
+        "Hypothesis, attempt, result",
+        "Timebox named",
+        "Production code unchanged unless asked"
+      ]
+    }
+  ]
+}

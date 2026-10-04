@@ -1,0 +1,33 @@
+{
+  "skill": "crietee-invoice",
+  "test_cases": [
+    {
+      "name": "hours_to_invoice",
+      "input": "Invoice 8 hours in September for Elusive Innovations, landing page.",
+      "assertions": [
+        "INV number from the register, not reused",
+        "8 × € 40 excl. VAT, 21% VAT, total incl.",
+        "Contains date, parties, period, iban placeholder, and due date",
+        "File under artifacts/invoices via crietee-brand",
+        "Invoice body is English"
+      ]
+    },
+    {
+      "name": "credit_note",
+      "input": "Credit note on INV-2026-004, charged 2 hours too many.",
+      "assertions": [
+        "CRN number, points at INV-2026-004",
+        "Negative amounts, same rate",
+        "Does not issue a new positive invoice number"
+      ]
+    },
+    {
+      "name": "missing_hours",
+      "input": "Make an invoice for Bakkerij Noord.",
+      "assertions": [
+        "Does not invent hours or a rate",
+        "Asks for period and quantity before creating the file"
+      ]
+    }
+  ]
+}
