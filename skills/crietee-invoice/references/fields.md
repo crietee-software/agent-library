@@ -15,7 +15,7 @@ Checklist source: mandatory invoice lines, article 35a of the Dutch Wet op de om
 - VAT amount
 - KvK number (not required on the VAT invoice, studio default anyway)
 
-Write labels in English (`Invoice number`, `VAT`). The VAT number itself stays the Dutch format once the user supplies it.
+Labels follow the document language. Default Dutch: `Factuurnummer`, `Factuurdatum`, `Btw-identificatienummer`, `Btw-tarief`, `Btw-bedrag`, `KvK-nummer`. English labels only if the user asked for English. The VAT number itself stays the Dutch format once the user supplies it.
 
 ## KOR
 

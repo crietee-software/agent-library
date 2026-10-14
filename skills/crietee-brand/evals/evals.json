@@ -1,0 +1,32 @@
+{
+  "skill": "crietee-brand",
+  "test_cases": [
+    {
+      "name": "document_tokens",
+      "input": "Put this one-page note on Crietee letterhead for a client.",
+      "assertions": [
+        "Paper #F2EFE6, ink type, gold cut #CBA56A",
+        "One gold signal bar, not around the page",
+        "No white logo box",
+        "Client prose is Dutch unless the user asked for English"
+      ]
+    },
+    {
+      "name": "checklist",
+      "input": "Brand this six-page research memo.",
+      "assertions": [
+        "Summary in plain words before the body",
+        "Table of contents because it is more than five pages",
+        "Title names the subject and ends with a period"
+      ]
+    },
+    {
+      "name": "client_product",
+      "input": "Make the client checkout use Crietee gold and paper.",
+      "assertions": [
+        "Does not recolor the client product",
+        "Offers a branded review document instead, or asks for Crietee's own site"
+      ]
+    }
+  ]
+}

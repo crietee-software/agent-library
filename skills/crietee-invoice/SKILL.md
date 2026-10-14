@@ -26,11 +26,11 @@ Not: quote, proposal, terms, collaboration agreement, fitness week plan.
 | Payment term | 14 days. Statutory B2B default is 30, maximum 60 |
 | Number | `INV-YYYY-NNN`, credit `CRN-YYYY-NNN`. Never reuse |
 | Currency | EUR |
-| Language | English. Keep Dutch legal labels and the KOR sentence as specified in the reference |
+| Language | Dutch in the file, unless the user asks for English. KOR sentence stays Dutch |
 
 ## Loop
 
-1. Read `crietee-brand` plus `references/documents.md`.
+1. Read `crietee-brand`. Invoice layout uses the visual system; no table of contents.
 2. Read `references/fields.md` for a credit note, KOR, or a rate other than 21%.
 3. Missing client, period, or hours block the invoice. Ask. Do not invent hours.
 4. Allocate a number:
@@ -41,7 +41,7 @@ python3 /root/.grok/server-skills/crietee-invoice/scripts/next_doc.py \
 ```
 
 Use `--kind CRN` for a credit note. The script writes `/workspace/artifacts/admin/register.json`.
-5. Build the docx. Kicker `COMMERCIAL · INVOICE` or `COMMERCIAL · CREDIT NOTE`. Title ends with a period.
+5. Build the docx via `crietee-brand`. Kicker `COMMERCIAL · INVOICE` or `COMMERCIAL · CREDIT NOTE`. Title names the period or job and ends with a period.
 6. Save as `/workspace/artifacts/invoices/INV-YYYY-NNN-client.docx` (credit: `CRN-...`). Pdf, spot-check first and last page.
 7. Write path and number into project memory. Register status stays `draft` until the user says it was sent.
 

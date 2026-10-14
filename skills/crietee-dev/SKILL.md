@@ -7,7 +7,7 @@ lifecycle: active
 
 # Crietee dev
 
-Plan and deliver build work in slices a client can see. No framework sermon. A diff review belongs to crietee-review. Write plans and notes in English.
+Plan and deliver build work in slices a client can see. No framework sermon. A diff review belongs to crietee-review. A branded plan is Dutch unless the user asks for English.
 
 Slices, done, and handover: [references/delivery.md](references/delivery.md).
 
@@ -23,7 +23,7 @@ Not: quote price, invoice, code review, brand, site motion, fitness.
 3. Cut slices of 8 hours max. Each slice has a visible result. Read `references/delivery.md`.
 4. Estimate in hours, not story points. Use a band if an assumption moves the hours by more than 30%.
 5. Write code only if the user asks for the build, not if they ask for a plan.
-6. For a plan: docx via crietee-brand, kicker `BUILD · PLAN`, path `/workspace/artifacts/build/YYYY-MM-DD-topic.docx`.
+6. For a plan: docx via `crietee-brand`, kicker `BUILD · PLAN`, path `/workspace/artifacts/build/YYYY-MM-DD-topic.docx`. First prose is the delivery sentence.
 7. For a handover: note in the same folder, plus what was not done.
 8. Write the path into project memory.
 

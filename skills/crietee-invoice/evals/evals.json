@@ -9,7 +9,7 @@
         "8 × € 40 excl. VAT, 21% VAT, total incl.",
         "Contains date, parties, period, iban placeholder, and due date",
         "File under artifacts/invoices via crietee-brand",
-        "Invoice body is English"
+        "Invoice body is Dutch unless the user asked for English"
       ]
     },
     {

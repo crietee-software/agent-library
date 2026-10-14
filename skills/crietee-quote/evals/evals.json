@@ -9,7 +9,7 @@
         "Number QTE-YYYY-NNN from the register",
         "Contains scope, out of scope, assumptions, and an acceptance line",
         "File under artifacts/quotes via crietee-brand",
-        "Quote body is English"
+        "Quote body is Dutch unless the user asked for English"
       ]
     },
     {

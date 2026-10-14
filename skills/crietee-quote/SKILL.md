@@ -27,10 +27,11 @@ Not: invoice, credit note, terms, collaboration agreement, fitness week plan, co
 | Payment after acceptance | 14 days. Statutory B2B default is 30, maximum 60 |
 | Terms | `artifacts/1-algemene-voorwaarden.docx` applies. Do not rewrite them |
 | Number | `QTE-YYYY-NNN` from the script below |
+| Language | Dutch in the file, unless the user asks for English. Voice: `crietee-brand` |
 
 ## Loop
 
-1. Read `crietee-brand` plus `references/system.md` and `references/documents.md`.
+1. Read `crietee-brand`.
 2. Ask only if missing client, goal, or rate (non-Elusive) blocks the price. Everything else becomes a numbered assumption.
 3. Allocate a number and register the draft:
 
@@ -39,14 +40,14 @@ python3 /root/.grok/server-skills/crietee-quote/scripts/next_doc.py \
   --kind QTE --client "Client" --title "Short title"
 ```
 
-4. Build the docx with the docx skill. Paper `#F2EFE6`, ink hero, one gold signal bar. Title ends with a period. Kicker `COMMERCIAL · QUOTE`.
+4. Build the docx with the docx skill via `crietee-brand`. Kicker `COMMERCIAL · QUOTE`. Title names the job and ends with a period. First prose is the summary.
 5. Save as `/workspace/artifacts/quotes/QTE-YYYY-NNN-client.docx`. Convert to pdf. Spot-check the first and last page.
 6. Write the path into project memory.
 
 ## Required blocks
 
 1. Parties, date, number, valid until.
-2. Why this quote exists, three sentences max.
+2. Why this quote exists, three sentences max. This is the summary.
 3. Scope, as work that will be delivered.
 4. Out of scope.
 5. Approach in slices, hours per slice.
@@ -60,5 +61,4 @@ python3 /root/.grok/server-skills/crietee-quote/scripts/next_doc.py \
 
 - No fixed price without an hour band when the scope is still vague.
 - No team language. Solo studio.
-- No second gold bar, no white logo box.
-- Write the quote in English unless the user asks for Dutch.
+- No slogan as the title.
