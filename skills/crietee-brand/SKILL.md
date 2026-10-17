@@ -1,32 +1,34 @@
 ---
 name: crietee-brand
-description: "Huisstijl van Crietee Software volgens brandbook v1.4: kleuren, lettertypen, logo, opmaak van documenten en schrijfregels. Gebruik bij een document met de huisstijl, bij huisstijl of brandbook, of bij een pagina van Crietee zelf. Niet voor de huisstijl van een klant, prijsberekening of btw-regels."
+description: "Crietee Software house style under brandbook v1.4: colours, type, logo, document layout and writing rules. Use for a document in the house style, for house style or brand book questions, or for a Crietee page of our own. Not for a client's brand, pricing, or VAT rules."
 type: workflow
 lifecycle: active
 ---
 
-# Crietee huisstijl
+# Crietee house style
 
-Het volledige brandbook (versie 1.4, oktober 2026) staat naast deze skill: `brandbook/Crietee_Software_Brandbook_v1.4.pdf`. De kleuren, lettertypen en het logo staan in [references/system.md](references/system.md). Tekst, titels en de controle voor verzending staan in [references/documents.md](references/documents.md).
+The full brand book (version 1.4, October 2026) sits next to this skill: `brandbook/Crietee_Software_Brandbook_v1.4.pdf`. Colours, type and logo are in [references/system.md](references/system.md). Writing, titles and the pre-send checklist are in [references/documents.md](references/documents.md).
 
-Een document voor een klant is een Crietee-document. Het product van een klant is dat niet: daar pas je alleen Crietee's eigen onderdelen aan.
+A document for a client is a Crietee document. A client's product is not: there you only change Crietee's own parts.
 
-## Wanneer
+Output language is Dutch unless the user asks for English. Examples in these files are Dutch because the documents are.
 
-Gebruik bij: een document met de huisstijl, huisstijl, brandbook, of een pagina van Crietee zelf.
+## When
 
-Niet bij: de offerte of factuur zelf schrijven (die skills roepen deze skill aan), btw-regels, of een webshop van een klant in de goudkleur.
+Use for: a document in the house style, house style, the brand book, or a Crietee page of our own.
 
-## Werkwijze
+Not for: writing the quote or invoice itself (those skills call this one), VAT rules, or a client's shop in Crietee gold.
 
-1. Lees `references/system.md` voor de vormgeving en `references/documents.md` voor de tekst.
-2. Maak of pas het document aan: papier als achtergrond, inkt als tekst, één gouden balk, en het soort document dat de aanroepende skill noemt.
-3. Schrijf in het Nederlands, tenzij de gebruiker Engels vraagt.
-4. Controleer de eerste en de laatste pagina met de checklist in `references/documents.md`.
+## Workflow
 
-## Niet doen
+1. Read `references/system.md` for the visual rules and `references/documents.md` for the text rules.
+2. Make or adjust the document: paper background, ink text, one gold signal bar, and the document type the calling skill names.
+3. Write in Dutch, unless the user asks for English.
+4. Check the first and last page against the checklist in `references/documents.md`.
 
-- Geen tweede gouden balk, geen gouden kader om de pagina, geen wit vak achter het logo.
-- Geen slogan als titel van een document.
-- Geen Crietee-goud op de shop of app van een klant.
-- Het logo niet uitrekken, draaien, van een schaduw voorzien of opnieuw tekenen.
+## Do not
+
+- No second gold bar, no gold frame around the page, no white box behind the logo.
+- No slogan as the title of a document.
+- No Crietee gold on a client's shop or app.
+- Do not stretch, rotate, add a shadow to, or redraw the logo.

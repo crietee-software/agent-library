@@ -9,17 +9,17 @@ A slice is done when the client can point at it without an explanation of the di
 | Name | Verb + object |
 | Result | What is now possible |
 | Not | What this slice does not solve |
-| Hours | Whole number, max 8 |
+| Hours | Whole number, at most 8 |
 | Done when | One check the user can run |
 
-More than five slices: write the first two fully, the rest as a name plus an hour band.
+With more than five slices: write the first two in full, and the rest as a name plus an hour band.
 
 ## Definition of done
 
 - Does what the slice promised, on the agreed input.
-- The error path is visible, no silent fail.
+- The error path is visible; nothing fails silently.
 - No debug logs with client data.
-- Existing repo checks were run, or the note says why not.
+- The repo's existing checks were run, or the note says why not.
 
 ## Handover note
 
@@ -29,4 +29,4 @@ More than five slices: write the first two fully, the rest as a name plus an hou
 4. Hours against the estimate.
 5. The next slice, if there is one.
 
-No changelog novel. No screenshot wall.
+No changelog novel. No wall of screenshots.

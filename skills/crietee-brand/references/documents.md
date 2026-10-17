@@ -1,65 +1,65 @@
-# Documenten
+# Documents
 
-Brandbook v1.4, hoofdstukken 05, 12 en 12A/12B. Voor onderzoek, offerte, rapport, advies, bouwplan en beoordeling. Een factuur gebruikt het beeldsysteem en de toon, geen inhoudsopgave.
+Brand book v1.4, chapters 05, 12, 12A and 12B. For research, quotes, reports, advice, build plans and reviews. An invoice uses the visual system and the tone, but no table of contents.
 
-## Taal
+## Language
 
-Nederlands, tenzij de gebruiker Engels vraagt. Het document dat de klant krijgt volgt deze pagina.
+Dutch, unless the user asks for English. The document the client receives follows this page.
 
-Eerste vermelding: **Crietee Software**. Daarna: **Crietee**. Nooit `CRIETEE`, `CreeTee`, `Crieteé` of `CrieteeSoft`. In het logo: het cut-C plus `rietee`. In lopende tekst: Crietee.
+First mention: **Crietee Software**. After that: **Crietee**. Never `CRIETEE`, `CreeTee`, `Crieteé` or `CrieteeSoft`. In the logo: the cut-C plus `rietee`. In running text: Crietee.
 
-## Toon
+## Tone
 
-- **Duidelijk eerst.** Een begrijpelijke zin gaat altijd voor een slimme. Twijfel je? Kies de gewone zin.
-- **Kort.** Één idee per zin. Liever twee zinnen dan één bijzin.
-- **Concreet.** Zeg "webshop in twee weken", niet "oplossingen op maat".
-- **Gewone woorden.** Geen jargon of Engels als er een Nederlands woord is. Is een vakterm nodig, leg hem één keer uit.
-- **Actief.** Zeg wie iets doet: "Wij bouwen de webshop", niet "de webshop wordt gebouwd".
-- **Warm genoeg.** Vriendelijk en direct. Droog mag, bot niet.
+- **Clear first.** An ordinary sentence beats a clever one. Unsure? Pick the plain sentence.
+- **Short.** One idea per sentence. Two sentences beat one clause.
+- **Concrete.** Write "webshop in two weeks", not "custom solutions".
+- **Plain words.** No jargon or English where a Dutch word exists. A needed term gets one explanation, the first time.
+- **Active.** Say who does the work: "Wij bouwen de webshop", not "de webshop wordt gebouwd".
+- **Warm enough.** Friendly and direct. Dry is fine; blunt is not.
 
-## Aanspreekvorm
+## Forms of address
 
-- Offertes en contracten: "Opdrachtgever" en "Opdrachtnemer", zoals in de algemene voorwaarden. Nooit "je", "u" of "wij".
-- Onderzoeken, adviezen en mails: "je", tenzij de klant "u" wil. Kies één vorm en houd die het hele stuk vast.
+- Quotes and contracts: "Opdrachtgever" (client) and "Opdrachtnemer" (Crietee), as in the general terms. Never "je", "u" or "wij".
+- Research, advice and mail: "je", unless the client prefers "u". Pick one form and keep it for the whole document.
 
-## Titels
+## Titles
 
-- Offertes en contracten zijn formele stukken: kort, zonder "je" en zonder punt. De titel noemt eerst het soort stuk, bijvoorbeeld "Offerte migratie en verbeteringen webshop Hannah Warenhuis".
-- Andere documenten: de titel zegt waar het stuk over gaat. Geen woordspeling, geen raadsel.
-- Slogans ("Software met een snede.", "Scherpe software. Zichtbaar vooruit.") horen bij de website, social media en de voorkant van een presentatie. Niet bij een document.
+- Quotes and contracts are formal documents: short, no "je", and no full stop. The title names the document type first, for example "Offerte migratie en verbeteringen webshop Hannah Warenhuis".
+- Other documents: the title says what the document is about. No pun, no riddle.
+- Slogans ("Software met een snede.", "Scherpe software. Zichtbaar vooruit.") belong to the website, social media and the cover of a presentation. Not to a document.
 
-Standaardtitels in een offerte, in deze volgorde: Gegevens partijen, Omschrijving van de opdracht, Buiten de opdracht, Prijs en tarief, Voorwaarden en betaling, Aanvaarding.
+Standard quote section titles, in this order: Gegevens partijen, Omschrijving van de opdracht, Buiten de opdracht, Prijs en tarief, Voorwaarden en betaling, Aanvaarding.
 
-## Schrijfregels
+## Writing rules
 
-- **Volledige zinnen.** Geen spreektaal, geen vraagzinnen, geen uitroepen, geen afkortingen.
-- **Verplichtingen concreet.** Zeg wie wat doet en wanneer: "Opdrachtnemer voert de migratie uit." "Opdrachtgever levert de gegevens binnen vijf werkdagen aan."
-- **Eén term per begrip.** Kies één woord en houd het hele stuk vast.
-- **Cijfers en data.** Bedragen met twee decimalen en het bedrag excl. btw: "€ 40,00". Datum voluit: "7 november 2026".
-- **Geen vaagheid.** Geen "ongeveer", "krap", "gewoon" of "zo snel mogelijk". Noem een datum, een aantal of een voorwaarde.
-- **Lijsten** alleen voor gelijke onderdelen. Elk punt begint met een hoofdletter en eindigt met een punt.
-- **Nieuwe versie.** Een herziene offerte houdt hetzelfde nummer en krijgt de toevoeging "versie 2". Verwijzingen naar de eerdere versie blijven weg uit de tekst.
+- **Full sentences.** No spoken language, no question sentences, no exclamations, no abbreviations.
+- **Concrete obligations.** Say who does what and when: "Opdrachtnemer voert de migratie uit." "Opdrachtgever levert de gegevens binnen vijf werkdagen aan."
+- **One term per concept.** Choose one word and keep it for the whole document.
+- **Numbers and dates.** Amounts with two decimals and the amount excluding VAT: "€ 40,00". Dates in full: "7 november 2026".
+- **No vagueness.** No "about", "tight", "just" or "as fast as possible". Give a date, a number or a condition.
+- **Lists** only for parallel items. Each item starts with a capital and ends with a full stop.
+- **New version.** A revised quote keeps its number and gets the addition "versie 2". References to the earlier version do not go in the text.
 
-## Opbouw
+## Structure
 
-| Regel | Wanneer |
+| Rule | When |
 |---|---|
-| Begin met een samenvatting: de conclusie in gewone woorden | Elk document, direct na de kop |
-| Inhoudsopgave vooraan | Meer dan vijf pagina's |
-| Genummerde hoofdstukken waarvan de titel zegt wat erin staat | Rapporten, memo's, plannen, offertes met onderdelen |
-| Per verbeterpunt: hoe het nu is, wat je doet, waarom het helpt | Beoordelingen en adviezen |
-| Bron bij elk cijfer, klikbaar in de bronnenlijst | Onderzoek en elk getal in een memo |
+| Start with a summary: the conclusion in plain words | Every document, right after the heading |
+| Table of contents at the front | More than five pages |
+| Numbered chapters whose titles say what is inside | Reports, memos, plans, quotes with sections |
+| Per improvement point: what it is now, what to do, why it helps | Reviews and advice |
+| A source for every figure, clickable in the source list | Research and any number in a memo |
 
-## Controle voor verzending
+## Before sending
 
-Voor een stuk verstuurt:
+For every document:
 
-1. Zegt elke titel waar het stuk over gaat?
-2. Snapt iemand zonder vakkennis het bij de eerste keer lezen?
-3. Is de toon kort en concreet, zonder cliché en zonder raadseltaal?
-4. Staat de merknaam goed: Crietee in tekst, het cut-C plus rietee in het logo?
-5. Is er maximaal één gouden accent per vlak?
-6. Is het contrast groot genoeg: inkt op papier, papier op inkt?
-7. Heeft het logo zijn vrije zone?
+1. Does every title say what the document is about?
+2. Would someone without the jargon understand it on the first read?
+3. Is the tone short and concrete, without clichés or riddles?
+4. Is the name right: Crietee in text, cut-C plus rietee in the logo?
+5. Is there at most one gold accent per surface?
+6. Is the contrast high enough: ink on paper, or paper on ink?
+7. Does the logo have its clear space?
 
-Bij een offerte of contract ook: is de aanspreekvorm door het hele stuk gelijk? Staat bij elke verplichting wie het doet en wanneer? Zijn bedragen, data en percentages volledig? Komen de titels overeen met de standaardtitels?
+For a quote or contract, also: is the form of address the same throughout? Does every obligation say who does it and when? Are amounts, dates and percentages complete? Do the titles match the standard titles?

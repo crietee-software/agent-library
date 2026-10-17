@@ -1,34 +1,35 @@
 ---
 name: crietee-review
-description: "Review code or a diff for correctness, scope, security, and tests, with blocker, must, and may. Use when the user asks for a code review, PR review, or diff check. Not for quotes, design, brand, or a build plan."
+description: "Review code or a diff for correctness, scope, security and tests, with blocker, must and may. Use for a code review, PR review or diff check. Not for quotes, design, brand or a build plan."
 type: workflow
 lifecycle: active
 ---
 
 # Crietee review
 
-Review the diff, not the author. One finding, one consequence. Chat in English. A file for the client goes through `crietee-brand` and is Dutch unless the user asks for English.
+Review the diff, not the author. One finding, one consequence. Chat in English. A document for a client follows `crietee-brand` and is in Dutch unless the user asks for English.
 
 Severity and checklist: [references/severity.md](references/severity.md).
 
 ## When
 
-Trigger: code review, PR review, diff check, look at this change.
-Not: build plan, quote, invoice, visual brand, research memo.
+Use for: code review, PR review, diff check, "look at this change".
 
-## Loop
+Not for: build plan, quote, invoice, visual brand, research memo.
 
-1. Read the diff and the surrounding function. Do not review a filename alone.
+## Workflow
+
+1. Read the diff and the surrounding function. Do not review a file name alone.
 2. Read `references/severity.md`.
-3. Look for blockers first: wrong answer, data loss, secret, auth hole, scope that is not the job.
-4. Then must: missing error path, test that would not catch the bug, name that misleads the next reader.
-5. May only if no blocker is open. Three may-points max.
-6. Answer in chat, unless the user asks for a document. A document goes through `crietee-brand` and becomes a Crietee Werkplek document. Each finding: how it is now, what to do, why it helps.
-7. Close with: ship / ship after must / do not ship.
+3. Look for blockers first: a wrong answer, data loss, a secret, an auth hole, or work outside the agreed scope.
+4. Then musts: a missing error path, a test that would not catch the bug, a name that misleads the next reader.
+5. Only then mays, and only if no blocker is open. At most three may-points.
+6. Answer in chat, unless the user asks for a document. A document follows `crietee-brand` and becomes a Crietee Werkplek document. Each finding: how it is now, what to do, why it helps.
+7. Close with: ship, ship after the musts, or do not ship.
 
 ## Hard rules
 
-- Cite file and line, or say the line is not in the diff.
+- Cite the file and line, or say the line is not in the diff.
 - No style comments on code outside the diff.
-- Do not rewrite the feature if a targeted patch is enough.
-- A secret in the diff is always a blocker. Name the kind of secret, do not repeat the value.
+- Do not rewrite the feature when a targeted patch is enough.
+- A secret in the diff is always a blocker. Name the kind of secret; do not repeat the value.

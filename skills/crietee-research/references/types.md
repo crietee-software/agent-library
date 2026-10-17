@@ -5,14 +5,14 @@ Pick one. A second type is a second memo.
 ## Discovery
 
 Question: what must this job solve, for whom, and what is the smallest delivery?
-Sources: client mail, the existing site or repo, competitors the user names.
+Sources: the client's mail, the existing site or repo, the competitors the user names.
 Output: problem, user, success criterion, out of scope. No architecture.
 
 ## Desk
 
 Question: what is the state of play outside the repo?
-Sources: primary pages, docs, prices, regulation. Date them. A forum post is not the only source for a fact.
-Output: 5–7 findings, table of source / claim / confidence.
+Sources: primary pages, documentation, prices, regulation. Date them. A forum post is never the only source for a fact.
+Output: 5–7 findings, in a table of source, claim and confidence.
 
 ## Spike
 
@@ -23,5 +23,5 @@ Output: hypothesis, what was tried, result, hours for the rest, risk.
 ## Decision
 
 Question: A or B, given a deadline.
-Sources: earlier memos plus the user's constraint.
-Output: the choice, why the other one drops, the first step tomorrow.
+Sources: earlier memos and the user's constraint.
+Output: the choice, why the other option drops out, and the first step tomorrow.

@@ -2,22 +2,22 @@
 
 Pick one. Do not mix them silently.
 
-## Hour × rate
+## Hours × rate
 
-Default. Each slice: name, result, hours, rate, amount. Total excl. VAT, 21% VAT, incl.
+The default. Each phase: name, result, hours, rate and amount. Total excluding VAT, 21% VAT, then the total including VAT.
 
 Use this when the client still steers during the build.
 
 ## Band
 
-When scope is still an assumption: low / expected / high in hours. Quote price = expected. Above high only after written acceptance. Name the trigger that moves expected to high.
+When the scope is still an assumption: low, expected and high in hours. The quote price is the expected amount. Going above high only after written acceptance. Name the trigger that moves expected to high.
 
 ## Fixed price
 
-Only when scope, acceptance criteria, and out-of-scope are closed. The fixed price covers the slices, not extra work. Extra work = the hour rate, flagged before it starts.
+Only when the scope, the acceptance criteria and the out-of-scope items are closed. The fixed price covers the phases, not extra work. Extra work is charged at the hourly rate, and flagged before it starts.
 
 ## Leave out
 
-- Package names with no contents.
+- Package names without contents.
 - "Unlimited revisions".
-- Hosting, licenses, stores, or ad budget, unless the client asks. List those separately, passed through with no margin unless asked.
+- Hosting, licences, app stores or an advertising budget, unless the client asks. If the client asks, list them separately, passed through without margin unless agreed otherwise.

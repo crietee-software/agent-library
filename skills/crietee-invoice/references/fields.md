@@ -1,33 +1,26 @@
 # Invoice fields
 
-Checklist source: mandatory invoice lines, article 35a of the Dutch Wet op de omzetbelasting. If the rate or KOR status is unclear, check the Belastingdienst. Do not guess.
+Source for the mandatory invoice fields: article 35a of the Dutch VAT act (Wet op de omzetbelasting). If the rate or the KOR status is unclear, check with the Belastingdienst. Do not guess.
 
 ## Always on the invoice
 
 - Issue date
 - Sequential number (`INV-YYYY-NNN`)
-- VAT identification number of Crietee, or placeholder `[VAT number]`
+- The VAT identification number of Crietee, or the placeholder `[VAT number]`
 - Name and address of seller and client
 - Quantity and nature of the service
-- Date or period of the service if it differs from the invoice date
-- Unit price excl. VAT, any discount, taxable amount per rate
-- VAT rate applied
-- VAT amount
-- KvK number (not required on the VAT invoice, studio default anyway)
+- Date or period of the service, if it differs from the invoice date
+- Unit price excluding VAT, any discount, and the taxable amount per rate
+- The VAT rate applied
+- The VAT amount
+- KvK number (not required on a VAT invoice, but the studio always shows it)
 
-Labels follow the document language. Default Dutch: `Factuurnummer`, `Factuurdatum`, `Btw-identificatienummer`, `Btw-tarief`, `Btw-bedrag`, `KvK-nummer`. English labels only if the user asked for English. The VAT number itself stays the Dutch format once the user supplies it.
+Labels follow the document language, Dutch by default: `Factuurnummer`, `Factuurdatum`, `Btw-identificatienummer`, `Btw-tarief`, `Btw-bedrag`, `KvK-nummer`. Use English labels only when the user asks for English.
 
 ## KOR
 
-Only if the user says the small-business scheme applies. No VAT amount. Dutch sentence on the invoice, unchanged: `Factuur vrijgesteld van omzetbelasting op grond van artikel 25 Wet OB (kleineondernemersregeling).`
-
-## Credit note
-
-- Own number `CRN-YYYY-NNN`
-- Points at the original invoice number and invoice date
-- Negative amounts, same rate as the original invoice
-- Reason in one sentence
+Only if Levi says the small-business scheme applies. No VAT amount. This Dutch sentence goes on the invoice unchanged: `Factuur vrijgesteld van omzetbelasting op grond van artikel 25 Wet OB (kleineondernemersregeling).`
 
 ## Reminder
 
-No new invoice number. Same number, status `reminder` in the register, new letter with the open amount and the original due date.
+No new invoice number. Same number, a reminder status, and a new letter with the open amount and the original due date.

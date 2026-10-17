@@ -1,45 +1,45 @@
 ---
 name: crietee-invoice
-description: "Schrijf een factuur van Crietee Software met de wettelijke regels en btw, als tekst voor een document in Crietee Werkplek. Gebruik bij factuur, uren factureren of een herinnering. Niet voor offertes, contracten of weekplannen."
+description: "Write a Crietee Software invoice with the statutory fields and VAT, as text for a document in Crietee Werkplek. Use for an invoice, invoicing hours or a reminder. Not for quotes, contracts or week plans."
 type: workflow
 lifecycle: active
 ---
 
-# Crietee factuur
+# Crietee invoice
 
-Schrijf een factuur die een boekhouder kan inboeken. De huisstijl volgt [crietee-brand](../crietee-brand/SKILL.md). Wettelijke velden staan in [references/fields.md](references/fields.md).
+Write an invoice a bookkeeper can enter. The house style follows [crietee-brand](../crietee-brand/SKILL.md). Statutory fields are in [references/fields.md](references/fields.md).
 
-## Wanneer
+## When
 
-Gebruik bij: factuur, uren factureren, herinnering.
+Use for: invoice, invoicing hours, reminder.
 
-Niet bij: offerte, voorstel, contract, weekplan.
+Not for: quote, proposal, contract, week plan.
 
-## Standaardwaarden
+## Defaults
 
-| Veld | Standaard |
+| Field | Default |
 |---|---|
-| Verkoper | Crietee Software, eenmanszaak. Naam, adres, KvK en btw-id komen uit de instellingen van de werkplek |
-| Tarief | Uit de offerte of uit de uren. Vraag het als het ontbreekt |
-| Btw | 21%. Alleen 0% met de KOR-zin als Levi zegt dat de kleineondernemersregeling geldt |
-| Betaaltermijn | 14 dagen |
-| Nummer | Geeft de werkplek: INV-JJJJ-NNN. Hergebruik nooit een nummer |
-| Valuta | Euro |
-| Taal | Nederlands |
+| Seller | Crietee Software, sole proprietorship. Name, address, KvK number and VAT number come from the Werkplek settings |
+| Rate | From the quote or from the hours. Ask if it is missing; do not invent it |
+| VAT | 21%. 0% with the KOR sentence only if Levi says the small-business scheme applies |
+| Payment term | 14 days |
+| Number | Given by the Werkplek: INV-YYYY-NNN. Never reuse a number |
+| Currency | Euro |
+| Language | Dutch |
 
-## Werkwijze
+## Workflow
 
-1. Lees de huisstijl in `crietee-brand`.
-2. Factureer alleen uren die bestaan. Ontbreekt de klant, de periode of de uren, dan vraag je ernaar. Verzin geen uren.
-3. Lever het document in de vorm die de werkplek vraagt:
-   - **Titel:** "Factuur" met de periode of de opdracht, kort, zonder punt.
-   - **Inleiding:** één zin met de periode of het project.
-   - **Regels:** per regel de omschrijving, het aantal uren en het tarief per uur, excl. btw.
-   - **Betaling:** het betaaltermijn en de reden, bijvoorbeeld het factuurnummer als betalingskenmerk.
-4. Bedragen, btw en het totaal berekent de werkplek uit de regels.
+1. Read the house style in `crietee-brand`.
+2. Invoice only hours that exist. If the client, the period or the hours are missing, ask. Do not invent hours.
+3. Write the document in the form the Werkplek asks for:
+   - **Title:** "Factuur" plus the period or the job, short, no full stop.
+   - **Summary:** one sentence with the period or the project.
+   - **Lines:** per line the description, the hours and the rate per hour, excluding VAT.
+   - **Payment:** the payment term and a reason, for example the invoice number as payment reference.
+4. The Werkplek calculates the amounts, VAT and total from the lines.
 
-## Niet doen
+## Do not
 
-- Geen factuur zonder nummer van de werkplek.
-- Geen factuur als "betaald" markeren, tenzij Levi dat zegt.
-- Creditnota's maakt de werkplek nog niet. Zeg dat tegen Levi, en maak er geen losse nota van.
+- No invoice without a number from the Werkplek.
+- Do not mark an invoice as paid unless Levi says so.
+- The Werkplek does not make credit notes yet. Tell Levi, and do not make a loose note instead.

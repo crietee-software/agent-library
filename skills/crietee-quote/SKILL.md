@@ -1,61 +1,61 @@
 ---
 name: crietee-quote
-description: "Schrijf een offerte van Crietee Software: scope, aannames, prijs en geldigheid, als tekst voor een document in Crietee Werkplek. Gebruik bij offerte, voorstel, schatting of prijs. Niet voor facturen, contracten of weekplannen."
+description: "Write a Crietee Software quote: scope, assumptions, price and validity, as text for a document in Crietee Werkplek. Use for a quote, proposal, estimate or price. Not for invoices, contracts or week plans."
 type: workflow
 lifecycle: active
 ---
 
-# Crietee offerte
+# Crietee quote
 
-Schrijf een offerte die een klant kan accepteren. Geen brochure. De huisstijl en de schrijfregels volgen [crietee-brand](../crietee-brand/SKILL.md) en het brandbook.
+Write a quote a client can accept. Not a brochure. The house style and writing rules follow [crietee-brand](../crietee-brand/SKILL.md) and the brand book.
 
-Prijsmodellen: [references/pricing.md](references/pricing.md).
+Price models: [references/pricing.md](references/pricing.md).
 
-## Wanneer
+## When
 
-Gebruik bij: offerte, voorstel, schatting, prijs.
+Use for: quote, proposal, estimate, price.
 
-Niet bij: factuur, contract, algemene voorwaarden, weekplan.
+Not for: invoice, contract, general terms, week plan.
 
-## Standaardwaarden
+## Defaults
 
-| Veld | Standaard |
+| Field | Default |
 |---|---|
-| Partijen | Crietee Software, eenmanszaak |
-| Tarief | Elusive Innovations: € 40,00 excl. btw. Voor een andere klant vraag je het tarief; verzin het niet |
-| Btw | 21% |
-| Geldig tot | 14 dagen na de datum van de offerte |
-| Betaling na acceptatie | 14 dagen |
-| Voorwaarden | De algemene voorwaarden van Crietee Software gelden. Herschrijf ze niet |
-| Nummer | Geeft de werkplek: QTE-JJJJ-NNN |
-| Taal | Nederlands, tenzij de gebruiker Engels vraagt |
+| Parties | Crietee Software, sole proprietorship |
+| Rate | Elusive Innovations: € 40,00 excluding VAT. For another client, ask for the rate; do not invent it |
+| VAT | 21% |
+| Valid until | 14 days after the quote date |
+| Payment after acceptance | 14 days |
+| Terms | Crietee Software's general terms apply. Do not rewrite them |
+| Number | Given by the Werkplek: QTE-YYYY-NNN |
+| Language | Dutch, unless the user asks for English |
 
-## Werkwijze
+## Workflow
 
-1. Lees de huisstijl in `crietee-brand`.
-2. Vraag alleen als klant, doel of tarief ontbreekt. Al het andere wordt een genummerde aanname.
-3. Lever het document in de vorm die de werkplek vraagt:
-   - **Titel:** "Offerte" met het onderwerp, kort, zonder punt.
-   - **Inleiding:** drie zinnen op hoogte van de samenvatting: wat, voor wie, wat het kost.
-   - **Secties:** de standaardtitels hieronder, in deze volgorde.
-   - **Regels:** per onderdeel de omschrijving, het aantal uren en het tarief per uur.
-4. Bedragen en btw berekent de werkplek uit de regels. Schrijf geen bedragen in de tekst die al in de regels staan.
+1. Read the house style in `crietee-brand`.
+2. Ask only if the client, the goal or the rate is missing. Everything else becomes a numbered assumption.
+3. Write the document in the form the Werkplek asks for:
+   - **Title:** "Offerte" plus the subject, short, no full stop.
+   - **Summary:** three sentences: what, for whom, and what it costs.
+   - **Sections:** the standard section titles below, in this order.
+   - **Lines:** per item the description, the hours and the rate per hour.
+4. The Werkplek calculates the amounts and VAT from the lines. Do not write amounts in the text that are already in the lines.
 
-## Verplichte onderdelen
+## Required sections
 
-1. Samenvatting: waarom deze offerte bestaat, in drie zinnen.
-2. Omschrijving van de opdracht: wat er opgeleverd wordt.
-3. Buiten de opdracht: wat niet in de prijs zit.
-4. Aanpak: in fasen, met de uren per fase.
-5. Prijs en tarief.
-6. Aannames: elk met het gevolg als het niet klopt.
-7. Planning, betaling en wat acceptatie betekent.
-8. Aanvaarding: naam, datum en handtekening.
-9. Één zin: de algemene voorwaarden van Crietee Software zijn van toepassing.
+1. Summary: why this quote exists, in three sentences.
+2. Scope of the assignment: what will be delivered.
+3. Out of scope: what is not in the price.
+4. Approach: in phases, with the hours per phase.
+5. Price and rate.
+6. Assumptions: each with the consequence if it turns out wrong.
+7. Schedule, payment and what acceptance means.
+8. Acceptance: name, date and signature.
+9. One sentence: Crietee Software's general terms apply.
 
-## Niet doen
+## Do not
 
-- Geen vaste prijs als de scope nog vaag is. Geef dan een uurband.
-- Geen teamtaal: Crietee is een eenmanszaak.
-- Geen korting die niet is gevraagd.
-- Geen slogan als titel.
+- No fixed price while the scope is still vague. Give an hour band instead.
+- No team language: Crietee is a sole proprietorship.
+- No discount that was not asked for.
+- No slogan as the title.
