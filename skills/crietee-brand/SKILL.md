@@ -1,30 +1,32 @@
 ---
 name: crietee-brand
-description: "Apply Crietee Software brand to a client document or to Crietee's own UI: paper, ink, gold cut, type, voice, and the document checklist. Use when another Crietee skill says to go through crietee-brand, or when the user asks for huisstijl, brandbook, or a branded docx/pdf. Not for recoloring a client shop, quote pricing, invoice VAT, or Crietee site motion."
+description: "Huisstijl van Crietee Software volgens brandbook v1.4: kleuren, lettertypen, logo, opmaak van documenten en schrijfregels. Gebruik bij een document met de huisstijl, bij huisstijl of brandbook, of bij een pagina van Crietee zelf. Niet voor de huisstijl van een klant, prijsberekening of btw-regels."
 type: workflow
 lifecycle: active
 ---
 
-# Crietee brand
+# Crietee huisstijl
 
-Source: Brandbook 01 v1.1 (oktober 2026). Tokens: [references/system.md](references/system.md). Writing and document shape: [references/documents.md](references/documents.md).
+Het volledige brandbook (versie 1.4, oktober 2026) staat naast deze skill: `brandbook/Crietee_Software_Brandbook_v1.4.pdf`. De kleuren, lettertypen en het logo staan in [references/system.md](references/system.md). Tekst, titels en de controle voor verzending staan in [references/documents.md](references/documents.md).
 
-A file for a client is a Crietee document. A client product is not. Recolor only Crietee's own surfaces.
+Een document voor een klant is een Crietee-document. Het product van een klant is dat niet: daar pas je alleen Crietee's eigen onderdelen aan.
 
-## When
+## Wanneer
 
-Trigger: branded document, huisstijl, brandbook, apply Crietee brand, restyle Crietee's own page.
-Not: write the quote or invoice from scratch (those skills call this one), VAT rules, a client shop in Crietee gold.
+Gebruik bij: een document met de huisstijl, huisstijl, brandbook, of een pagina van Crietee zelf.
 
-## Loop
+Niet bij: de offerte of factuur zelf schrijven (die skills roepen deze skill aan), btw-regels, of een webshop van een klant in de goudkleur.
 
-1. Read `references/system.md` and `references/documents.md`.
-2. Build or restyle the file the calling skill named. Paper ground, ink type, one gold signal bar, kicker from the caller.
-3. Client prose follows `documents.md`. Dutch unless the user asked for English.
-4. Pdf, then spot-check the first and last page against the send checklist in `documents.md`.
+## Werkwijze
 
-## Do not
+1. Lees `references/system.md` voor de vormgeving en `references/documents.md` voor de tekst.
+2. Maak of pas het document aan: papier als achtergrond, inkt als tekst, één gouden balk, en het soort document dat de aanroepende skill noemt.
+3. Schrijf in het Nederlands, tenzij de gebruiker Engels vraagt.
+4. Controleer de eerste en de laatste pagina met de checklist in `references/documents.md`.
 
-- No second gold bar, no gold frame around the page, no white logo box.
-- No tagline as a document title.
-- No Crietee gold on a client shop or client app.
+## Niet doen
+
+- Geen tweede gouden balk, geen gouden kader om de pagina, geen wit vak achter het logo.
+- Geen slogan als titel van een document.
+- Geen Crietee-goud op de shop of app van een klant.
+- Het logo niet uitrekken, draaien, van een schaduw voorzien of opnieuw tekenen.

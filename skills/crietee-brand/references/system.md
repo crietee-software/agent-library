@@ -1,53 +1,54 @@
-# System
+# Systeem
 
-Brandbook 01 v1.1. One home for tokens. Do not restyle a client product with these colours.
+Brandbook v1.4. Dit is de bron voor kleuren, lettertypen, logo en opmaak. Gebruik deze waarden exact. Kleur een klantproduct niet met deze kleuren.
 
-## Palette
+## Palet
 
-| Token | Hex | Role |
+| Token | Hex | Rol |
 |---|---|---|
-| Ink | `#0B0C0F` | Ground on dark, type on paper, UI chrome |
-| Paper | `#F2EFE6` | Print and documents |
-| Gold / cut | `#CBA56A` | One signal per surface: CTA, cut, focus. Always this hex in the logo |
-| Steel | `#8A8F98` | Meta, labels, captions, disabled |
-| Fog | `#16181E` | Raised ink, cards on dark |
-| Violet | `#6A4CFF` | Product UI only: data, tags, a second accent. Never in the logo |
+| Ink | `#0B0C0F` | Fundering. Achtergronden, tekst op papier, de werkplek zelf |
+| Paper | `#F2EFE6` | Lichtvlak. Print en documenten |
+| Gold / cut | `#CBA56A` | Signaal: één accent per vlak. Voor een knop, de snede of focus. In het logo altijd deze kleur |
+| Violet | `#6A4CFF` | Alleen als tweede accent in productinterfaces: data, tags. Spaarzaam. Nooit in het logo |
+| Steel | `#8A8F98` | Meta, labels, bijschriften, uitgeschakeld |
+| Fog | `#16181E` | Verhoogde inkt: kaarten op een donkere achtergrond |
 
-Contrast is ink on paper, or paper on ink. Gold is not body text.
+Contrast is inkt op papier, of papier op inkt. Goud is geen lopende tekst.
 
-## Type
+## Lettertypen
 
-| Role | Family | Size |
-|---|---|---|
-| Display / wordmark | Darker Grotesque (Black, ExtraBold, Bold) | 40–64 |
-| Subhead / intro | Space Grotesk (Bold, Medium, Regular) | 14–16 intro, 20–28 heading |
-| Body | Inter (Regular, Medium, SemiBold) | 10–12 |
-| Kicker / label | Bricolage Grotesque (Medium, Bold) | 7–9 |
-| Hex / code | JetBrains Mono | 7–9 |
+| Gebruik | Lettertype | Gewichten | Grootte |
+|---|---|---|---|
+| Display en wordmerk | Darker Grotesque | Black, ExtraBold, Bold | 40–64 |
+| Subkop en intro | Space Grotesk | Bold, Medium, Regular | intro 14–16, kop 20–28 |
+| Lopende tekst, documenten, productinterface | Inter | Regular, Medium, SemiBold | 10–12 |
+| Rubriek en labels (kickers, hoofdstuktitels, meta) | Bricolage Grotesque | Medium, Bold | 7–9 |
+| Hex en code | JetBrains Mono | Regular, Medium | 7–9 |
 
-Body leading ± 1.45em. Headings tighter, ± 0.95em.
+Regelafstand van lopende tekst ± 1,45 em. Koppen strakker, ± 0,95 em.
 
-If those faces are missing: one grotesk for display, one readable sans for body. No serif, no comic, no all-caps wordmark.
+Zijn die lettertypen niet beschikbaar: één grotesk voor de koppen en één leesbare sans voor de tekst. Geen schreefletter, geen kapitalen voor het wordmerk.
 
 ## Logo
 
-- Primary lockup: mark left, wordmark right. The cut-C is the letter c: mark + `rietee`. Never `c` + `rietee`.
-- Gold cut is always `#CBA56A`. Never grey, never a client colour.
-- Clear space: at least the height of the c. Nothing in that zone.
-- Minimum: mark 24px / 8mm. Horizontal lockup 120px / 32mm. Favicon is mark only, gold cut kept.
-- Do not stretch, rotate, drop-shadow, redraw, or round the cut. Do not put the lockup on a busy photo without a contrast field. Do not put it in a white box on paper.
+- Het merkteken is een C met een schuine snede. De ring staat voor afronden en afmaken, de gouden snede voor de beslissing.
+- Hoofdvorm: merkteken links, wordmerk rechts. Het cut-C is de letter c: merkteken + `rietee`. Nooit `c` + `rietee`.
+- De gouden snede is altijd `#CBA56A`. Nooit grijs, nooit een kleur van de klant.
+- Vrije zone: minimaal de hoogte van de letter c. Niets in die zone.
+- Minimumformaten: merkteken 24 px / 8 mm. Horizontale hoofdvorm 120 px / 32 mm. Favicon en app-icoon: alleen het merkteken, met de gouden snede.
+- Varianten: primair op ink, primair op paper, alleen het merkteken, en mono voor gebruiksdoelen.
+- Nooit: de snede uitrekken, draaien, van een slagschaduw voorzien of afronden; het merkteken hertekenen; het wordmerk in kapitalen zetten of in een ander lettertype; het logo op een drukke foto zonder contrastvlak; het logo in een wit vak op papier.
 
-## Document layout
+## Opmaak van documenten
 
-A4. Margins 16mm. 12 columns, gutter 4mm. One cut may break the grid.
+- A4, marges 16 mm, 12 kolommen, goot 4 mm. Eén snede mag het raster breken.
+- Achtergrond: papier. Een kop- of omslagvlak mag inkt zijn, met papieren tekst.
+- Eén gouden balk van 6–8 pt, links of boven. Nooit rondom de pagina.
+- Kicker: Bricolage Grotesque, schuin afgesneden hoek van 12° tot 18° toegestaan. De aanroepende skill noemt de kickertekst.
+- Een kaart mag één afgesneden hoek hebben, rechtsonder. Niet op elk blok.
 
-- Ground: paper. Hero or cover band may be ink, with paper type.
-- One gold signal bar, 6–8pt, left or top. Never around the page.
-- Kicker: Bricolage Grotesque, 12°–18° cut allowed. The calling skill names the kicker string.
-- Title ends with a period and names the subject. No slogan.
-- Optional: one clipped corner on a card, bottom right. Not on every block.
+## Andere schermen
 
-## Other surfaces
-
-- Web (Crietee's own): max content 1120–1200px. Type scale 1.25. Gold only on the primary CTA and focus.
-- Client shop or client app: leave their palette. The review *document* still uses this system.
+- Web van Crietee zelf: maximale breedte 1120–1200 px, typeschaal 1,25. Goud alleen op de primaire knop en bij focus.
+- Klantshop of klantapp: hun palet blijft. Het beoordelingsdocument gebruikt wel dit systeem.
+- Visitekaart: voorzijde op ink met het wordmerk, keerzijde het merkteken.
