@@ -1,64 +1,61 @@
 ---
 name: crietee-quote
-description: "Draft a Crietee quote with scope, assumptions, price, and validity, as a branded docx and pdf. Use when the user asks for a quote, proposal, estimate, or price. Not for invoices, contracts, or week plans."
+description: "Schrijf een offerte van Crietee Software: scope, aannames, prijs en geldigheid, als tekst voor een document in Crietee Werkplek. Gebruik bij offerte, voorstel, schatting of prijs. Niet voor facturen, contracten of weekplannen."
 type: workflow
 lifecycle: active
 ---
 
-# Crietee quote
+# Crietee offerte
 
-Write an offer a client can accept. Not a brochure. Every file goes through crietee-brand.
+Schrijf een offerte die een klant kan accepteren. Geen brochure. De huisstijl en de schrijfregels volgen [crietee-brand](../crietee-brand/SKILL.md) en het brandbook.
 
-Price models: [references/pricing.md](references/pricing.md).
+Prijsmodellen: [references/pricing.md](references/pricing.md).
 
-## When
+## Wanneer
 
-Trigger: quote, proposal, estimate, price, offer.
-Not: invoice, credit note, terms, collaboration agreement, fitness week plan, code.
+Gebruik bij: offerte, voorstel, schatting, prijs.
 
-## Defaults
+Niet bij: factuur, contract, algemene voorwaarden, weekplan.
 
-| Field | Default |
+## Standaardwaarden
+
+| Veld | Standaard |
 |---|---|
-| Seller | Crietee Software, sole proprietorship. Placeholders `[name]`, `[city]`, `[KvK number]`, `[VAT number]` until the user fills them |
-| Rate | Elusive Innovations: € 40 excl. VAT. Any other client: ask the rate, do not invent it |
-| VAT | 21%. 0% plus the Dutch exemption line only if the user says KOR |
-| Validity | 14 days from the quote date |
-| Payment after acceptance | 14 days. Statutory B2B default is 30, maximum 60 |
-| Terms | `artifacts/1-algemene-voorwaarden.docx` applies. Do not rewrite them |
-| Number | `QTE-YYYY-NNN` from the script below |
-| Language | Dutch in the file, unless the user asks for English. Voice: `crietee-brand` |
+| Partijen | Crietee Software, eenmanszaak |
+| Tarief | Elusive Innovations: € 40,00 excl. btw. Voor een andere klant vraag je het tarief; verzin het niet |
+| Btw | 21% |
+| Geldig tot | 14 dagen na de datum van de offerte |
+| Betaling na acceptatie | 14 dagen |
+| Voorwaarden | De algemene voorwaarden van Crietee Software gelden. Herschrijf ze niet |
+| Nummer | Geeft de werkplek: QTE-JJJJ-NNN |
+| Taal | Nederlands, tenzij de gebruiker Engels vraagt |
 
-## Loop
+## Werkwijze
 
-1. Read `crietee-brand`.
-2. Ask only if missing client, goal, or rate (non-Elusive) blocks the price. Everything else becomes a numbered assumption.
-3. Allocate a number and register the draft:
+1. Lees de huisstijl in `crietee-brand`.
+2. Vraag alleen als klant, doel of tarief ontbreekt. Al het andere wordt een genummerde aanname.
+3. Lever het document in de vorm die de werkplek vraagt:
+   - **Titel:** "Offerte" met het onderwerp, kort, zonder punt.
+   - **Inleiding:** drie zinnen op hoogte van de samenvatting: wat, voor wie, wat het kost.
+   - **Secties:** de standaardtitels hieronder, in deze volgorde.
+   - **Regels:** per onderdeel de omschrijving, het aantal uren en het tarief per uur.
+4. Bedragen en btw berekent de werkplek uit de regels. Schrijf geen bedragen in de tekst die al in de regels staan.
 
-```bash
-python3 /root/.grok/server-skills/crietee-quote/scripts/next_doc.py \
-  --kind QTE --client "Client" --title "Short title"
-```
+## Verplichte onderdelen
 
-4. Build the docx with the docx skill via `crietee-brand`. Kicker `COMMERCIAL · QUOTE`. Title names the job and ends with a period. First prose is the summary.
-5. Save as `/workspace/artifacts/quotes/QTE-YYYY-NNN-client.docx`. Convert to pdf. Spot-check the first and last page.
-6. Write the path into project memory.
+1. Samenvatting: waarom deze offerte bestaat, in drie zinnen.
+2. Omschrijving van de opdracht: wat er opgeleverd wordt.
+3. Buiten de opdracht: wat niet in de prijs zit.
+4. Aanpak: in fasen, met de uren per fase.
+5. Prijs en tarief.
+6. Aannames: elk met het gevolg als het niet klopt.
+7. Planning, betaling en wat acceptatie betekent.
+8. Aanvaarding: naam, datum en handtekening.
+9. Één zin: de algemene voorwaarden van Crietee Software zijn van toepassing.
 
-## Required blocks
+## Niet doen
 
-1. Parties, date, number, valid until.
-2. Why this quote exists, three sentences max. This is the summary.
-3. Scope, as work that will be delivered.
-4. Out of scope.
-5. Approach in slices, hours per slice.
-6. Price: hours × rate, subtotal excl. VAT, VAT, incl. No invented discount.
-7. Assumptions, each with the consequence if it is wrong.
-8. Schedule, payment, what acceptance means.
-9. Acceptance line: name, date, signature.
-10. One sentence: the general terms of Crietee Software apply.
-
-## Do not
-
-- No fixed price without an hour band when the scope is still vague.
-- No team language. Solo studio.
-- No slogan as the title.
+- Geen vaste prijs als de scope nog vaag is. Geef dan een uurband.
+- Geen teamtaal: Crietee is een eenmanszaak.
+- Geen korting die niet is gevraagd.
+- Geen slogan als titel.

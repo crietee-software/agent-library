@@ -1,58 +1,45 @@
 ---
 name: crietee-invoice
-description: "Create a Crietee invoice with Dutch statutory lines, sequential numbering, and VAT, as a branded docx and pdf. Use when the user asks for an invoice, credit note, or hours-to-invoice. Not for quotes, contracts, or week plans."
+description: "Schrijf een factuur van Crietee Software met de wettelijke regels en btw, als tekst voor een document in Crietee Werkplek. Gebruik bij factuur, uren factureren of een herinnering. Niet voor offertes, contracten of weekplannen."
 type: workflow
 lifecycle: active
 ---
 
-# Crietee invoice
+# Crietee factuur
 
-Write an invoice a bookkeeper can enter. Every file goes through crietee-brand.
+Schrijf een factuur die een boekhouder kan inboeken. De huisstijl volgt [crietee-brand](../crietee-brand/SKILL.md). Wettelijke velden staan in [references/fields.md](references/fields.md).
 
-Statutory fields and credit notes: [references/fields.md](references/fields.md).
+## Wanneer
 
-## When
+Gebruik bij: factuur, uren factureren, herinnering.
 
-Trigger: invoice, credit note, hours to invoice, reminder attachment.
-Not: quote, proposal, terms, collaboration agreement, fitness week plan.
+Niet bij: offerte, voorstel, contract, weekplan.
 
-## Defaults
+## Standaardwaarden
 
-| Field | Default |
+| Veld | Standaard |
 |---|---|
-| Seller | Crietee Software, sole proprietorship. Placeholders `[name]`, `[city]`, `[KvK number]`, `[VAT number]`, `[iban]` until the user fills them |
-| Rate | Elusive Innovations: € 40 excl. VAT. Any other client: take it from the quote, or ask |
-| VAT | 21%. KOR only if the user says so, with the Dutch exemption sentence |
-| Payment term | 14 days. Statutory B2B default is 30, maximum 60 |
-| Number | `INV-YYYY-NNN`, credit `CRN-YYYY-NNN`. Never reuse |
-| Currency | EUR |
-| Language | Dutch in the file, unless the user asks for English. KOR sentence stays Dutch |
+| Verkoper | Crietee Software, eenmanszaak. Naam, adres, KvK en btw-id komen uit de instellingen van de werkplek |
+| Tarief | Uit de offerte of uit de uren. Vraag het als het ontbreekt |
+| Btw | 21%. Alleen 0% met de KOR-zin als Levi zegt dat de kleineondernemersregeling geldt |
+| Betaaltermijn | 14 dagen |
+| Nummer | Geeft de werkplek: INV-JJJJ-NNN. Hergebruik nooit een nummer |
+| Valuta | Euro |
+| Taal | Nederlands |
 
-## Loop
+## Werkwijze
 
-1. Read `crietee-brand`. Invoice layout uses the visual system; no table of contents.
-2. Read `references/fields.md` for a credit note, KOR, or a rate other than 21%.
-3. Missing client, period, or hours block the invoice. Ask. Do not invent hours.
-4. Allocate a number:
+1. Lees de huisstijl in `crietee-brand`.
+2. Factureer alleen uren die bestaan. Ontbreekt de klant, de periode of de uren, dan vraag je ernaar. Verzin geen uren.
+3. Lever het document in de vorm die de werkplek vraagt:
+   - **Titel:** "Factuur" met de periode of de opdracht, kort, zonder punt.
+   - **Inleiding:** één zin met de periode of het project.
+   - **Regels:** per regel de omschrijving, het aantal uren en het tarief per uur, excl. btw.
+   - **Betaling:** het betaaltermijn en de reden, bijvoorbeeld het factuurnummer als betalingskenmerk.
+4. Bedragen, btw en het totaal berekent de werkplek uit de regels.
 
-```bash
-python3 /root/.grok/server-skills/crietee-invoice/scripts/next_doc.py \
-  --kind INV --client "Client" --title "Period or job" --amount "0"
-```
+## Niet doen
 
-Use `--kind CRN` for a credit note. The script writes `/workspace/artifacts/admin/register.json`.
-5. Build the docx via `crietee-brand`. Kicker `COMMERCIAL · INVOICE` or `COMMERCIAL · CREDIT NOTE`. Title names the period or job and ends with a period.
-6. Save as `/workspace/artifacts/invoices/INV-YYYY-NNN-client.docx` (credit: `CRN-...`). Pdf, spot-check first and last page.
-7. Write path and number into project memory. Register status stays `draft` until the user says it was sent.
-
-## Line block
-
-Each line: date or period, description, hours or units, rate excl. VAT, amount excl. VAT.
-Then subtotal, VAT rate, VAT amount, total incl. VAT.
-Payment block: iban placeholder, payable to Crietee Software, reference the invoice number, due date.
-
-## Do not
-
-- No invoice without a number from the register.
-- No credit note without the original invoice number.
-- Do not mark paid unless the user says so.
+- Geen factuur zonder nummer van de werkplek.
+- Geen factuur als "betaald" markeren, tenzij Levi dat zegt.
+- Creditnota's maakt de werkplek nog niet. Zeg dat tegen Levi, en maak er geen losse nota van.

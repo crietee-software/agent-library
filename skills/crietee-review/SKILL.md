@@ -23,7 +23,7 @@ Not: build plan, quote, invoice, visual brand, research memo.
 3. Look for blockers first: wrong answer, data loss, secret, auth hole, scope that is not the job.
 4. Then must: missing error path, test that would not catch the bug, name that misleads the next reader.
 5. May only if no blocker is open. Three may-points max.
-6. Answer in chat, unless the user asks for a file. A file goes through `crietee-brand` at `/workspace/artifacts/reviews/YYYY-MM-DD-topic.docx`. Each finding: how it is now, what to do, why it helps.
+6. Answer in chat, unless the user asks for a document. A document goes through `crietee-brand` and becomes a Crietee Werkplek document. Each finding: how it is now, what to do, why it helps.
 7. Close with: ship / ship after must / do not ship.
 
 ## Hard rules

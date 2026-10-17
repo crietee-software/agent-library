@@ -23,8 +23,8 @@ Not: quote, invoice, code review, a one-off bugfix, fitness week plan.
 3. Write scope and non-goals before opening sources. Default timebox: 4 hours desk, 8 hours spike, unless the user says otherwise.
 4. Collect sources. Every finding gets a source and a confidence: high / medium / low.
 5. Separate fact, interpretation, and recommendation.
-6. Build the memo with the docx skill via `crietee-brand`. Kicker `RESEARCH · MEMO`. Title names the question and ends with a period. First prose is the recommendation in plain words.
-7. Save as `/workspace/artifacts/research/YYYY-MM-DD-topic.docx`. Pdf, spot-check first and last page.
+6. Write the memo in the form the Crietee Werkplek asks for. Kicker `RESEARCH · MEMO`, in the style of `crietee-brand`. Title names the question and ends with a period. First prose is the recommendation in plain words.
+7. The memo becomes a document in Crietee Werkplek (Documenten). Check the first and last page after the PDF is made.
 8. Write the path into project memory.
 
 ## Required blocks

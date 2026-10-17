@@ -23,7 +23,7 @@ Not: quote price, invoice, code review, brand, site motion, fitness.
 3. Cut slices of 8 hours max. Each slice has a visible result. Read `references/delivery.md`.
 4. Estimate in hours, not story points. Use a band if an assumption moves the hours by more than 30%.
 5. Write code only if the user asks for the build, not if they ask for a plan.
-6. For a plan: docx via `crietee-brand`, kicker `BUILD · PLAN`, path `/workspace/artifacts/build/YYYY-MM-DD-topic.docx`. First prose is the delivery sentence.
+6. For a plan: write it in the form of a Crietee Werkplek document, kicker `BUILD · PLAN`, in the style of `crietee-brand`. First prose is the delivery sentence.
 7. For a handover: note in the same folder, plus what was not done.
 8. Write the path into project memory.
 
